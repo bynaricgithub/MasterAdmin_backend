@@ -1,0 +1,251 @@
+:root {
+    --primary-color: #294a70;
+    --secondary-color: #49688e;
+    --text-light: #ffffff;
+    --text-dark: #294a70;
+    --news-color: #ffa410;
+    --bg-light: #fff;
+}
+
+.bg-light {
+    background: var(--bg-light);
+}
+.topbar {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.topbar .left-info i {
+    margin-right: 5px;
+}
+.topbar .left-info a {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+}
+
+.topbar .social-icons a {
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    margin-right: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 4px;
+    border: 1px solid var(--text-light);
+}
+
+.topbar .social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+/* Header with Logo and Search Bar */
+.header {
+    color: var(--text-light);
+    padding: 0;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    max-height: 85px;
+    margin-right: 20px;
+}
+
+.header .site-info h1 {
+    font-size: 28px;
+    color: var(--text-dark);
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.header .site-info p {
+    font-size: 14px;
+    color: var(--text-dark);
+    margin: 0;
+    font-weight: 500;
+}
+
+.search-bar input {
+    background-color: var(--search-background);
+    color: var(--search-text-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 15px;
+    max-width: 200px;
+    border-radius: 20px 0 0 20px;
+}
+.search-bar .input-group {
+    border-radius: 20px;
+}
+
+.search-bar button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 4px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+.search-bar button:hover {
+    background-color: var(--primary-color);
+    opacity: 0.9;
+}
+
+/* Navbar Styles */
+.btn-primary,
+.navbar {
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+.bg-theme {
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+
+.navbar .nav-link {
+    color: var(--text-light);
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.navbar .dropdown-menu {
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .dropdown-item:last-child {
+    border: 0;
+}
+.navbar .dropdown-item {
+    color: var(--text-light);
+    border-bottom: 1px solid var(--text-light);
+    padding: 10px;
+    font-size: 14px;
+    white-space: break-spaces;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: var(--news-color);
+    color: var(--text-light);
+}
+/* News Ticker */
+.news-ticker {
+    background-color: var(--news-color);
+    color: var(--primary-color);
+    padding: 5px;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    font-weight: 600;
+}
+
+.news-ticker .news-content {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.news-ticker .news-list {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.news-ticker .news-list li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.news-ticker .news-list a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.news-ticker .news-list a:hover {
+    text-decoration: underline;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+footer a {
+    color: var(--bg-light); /* White links */
+    text-decoration: none;
+    padding: 0 6px;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Add separator between items except after the last item */
+.footer-menu .list-inline-item {
+    display: inline-block;
+    margin: 0 2px;
+    position: relative;
+}
+
+.footer-menu .list-inline-item:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -6px;
+    top: 0;
+    color: var(--bg-light); /* Separator color */
+}
+.footer-menu .copywrite {
+    background-color: var(--secondary-color);
+}
+/* Media Query */
+@media (max-width: 768px) {
+    .header .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .site-info h1 {
+        font-size: 18px;
+    }
+
+    .header .site-info p {
+        font-size: 12px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .topbar,
+    .navbar {
+        font-size: 12px;
+    }
+    .topbar .left-info,
+    .topbar .right-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topbar .social-icons {
+        margin-top: 10px;
+    }
+}
+
