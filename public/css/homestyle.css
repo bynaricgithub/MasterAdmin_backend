@@ -8,11 +8,7 @@
     --bg-light: #fff;
     --bg-body: #f0f0f0;
     --text-gray: #5e5e5e;
-    --border-color: #ddd;
-    --box-shadow-color: #151515;
-    --box-shadow-color2: #dadadac7;
 }
-
 .bg-light {
     background: var(--bg-light);
 }
@@ -28,7 +24,6 @@
     font-size: 14px;
     padding: 6px 0;
 }
-
 .topbar2 .left-info,
 .topbar .left-info {
     display: flex;
@@ -60,59 +55,50 @@
     padding: 0;
     border-radius: 4px;
     border: 1px solid var(--text-light);
-    box-shadow: 0px 1px 8px -1px var(--box-shadow-color);
+    box-shadow: 0px 1px 8px -1px #151515;
 }
-
 .topbar2 .social-icons a:hover {
     background-color: var(--news-color);
     color: var(--secondary-color);
     border: 1px solid var(--news-color);
 }
-
 /* Header with Logo and Search Bar */
 .header {
     color: var(--text-light);
     padding: 0;
 }
-
 .header .logo {
     display: flex;
     align-items: center;
 }
-
 .header .logo img {
     max-height: 85px;
     margin-right: 20px;
 }
-
 .header .site-info h1 {
     font-size: 28px;
-    color: var(--text-primary);
+    color: var(--text-dark);
     margin-bottom: 0;
     font-weight: 600;
 }
-
 .header .site-info p {
     font-size: 14px;
-    color: var(--text-primary);
+    color: var(--text-dark);
     margin: 0;
     font-weight: 500;
 }
-
 .search-bar input {
     background-color: var(--search-background);
     color: var(--search-text-color);
-    border: 1px solid var(--border-color);
+    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 8px 15px;
     max-width: 200px;
     border-radius: 20px 0 0 20px;
-    height: 45px;
 }
 .search-bar .input-group {
     border-radius: 20px;
 }
-
 .search-bar button {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -122,18 +108,15 @@
     cursor: pointer;
     border-radius: 0 20px 20px 0;
 }
-
 .search-bar button:hover {
     background-color: var(--primary-color);
     opacity: 0.9;
 }
-
 /* Navbar Styles */
 
 main {
     background-color: var(--bg-body);
 }
-
 .navbar {
     background: var(--primary-color);
     color: var(--text-light);
@@ -143,12 +126,10 @@ main {
     background: var(--primary-color);
     color: var(--text-light);
 }
-
 .bg-theme {
     background: var(--primary-color);
     color: var(--text-light);
 }
-
 .navbar .nav-link {
     color: var(--text-light);
     padding: 4px 8px;
@@ -160,13 +141,11 @@ main {
     color: var(--text-light);
     border-radius: 2px;
 }
-
 .navbar .dropdown-menu {
     background-color: var(--primary-color);
     padding: 0;
     margin: 0;
 }
-
 .navbar .dropdown-item:last-child {
     border: 0;
 }
@@ -177,7 +156,6 @@ main {
     font-size: 14px;
     white-space: break-spaces;
 }
-
 .navbar .dropdown-item:hover {
     background-color: var(--news-color);
     color: var(--text-light);
@@ -192,7 +170,6 @@ main {
     position: relative;
     font-weight: 600;
 }
-
 .news-ticker .news-content {
     display: flex;
     align-items: center;
@@ -200,26 +177,21 @@ main {
     overflow: hidden;
     white-space: nowrap;
 }
-
 .news-ticker .news-list {
     display: flex;
     animation: scroll 15s linear infinite;
 }
-
 .news-ticker .news-list li {
     list-style: none;
     margin-right: 50px;
 }
-
 .news-ticker .news-list a {
     color: var(--text-light);
     text-decoration: none;
 }
-
 .news-ticker .news-list a:hover {
     text-decoration: underline;
 }
-
 @keyframes scroll {
     0% {
         transform: translateX(100%);
@@ -228,24 +200,20 @@ main {
         transform: translateX(-100%);
     }
 }
-
 footer a {
     color: var(--bg-light); /* White links */
     text-decoration: none;
     padding: 0 6px;
 }
-
 footer a:hover {
     text-decoration: underline; /* Underline on hover */
 }
-
 /* Add separator between items except after the last item */
 .footer-menu .list-inline-item {
     display: inline-block;
     margin: 0 2px;
     position: relative;
 }
-
 .footer-menu .list-inline-item:not(:last-child)::after {
     content: "|";
     position: absolute;
@@ -256,7 +224,6 @@ footer a:hover {
 .footer-menu .copywrite {
     background-color: var(--secondary-color);
 }
-
 /* Home */
 .honSlider {
     margin: 0;
@@ -265,7 +232,6 @@ footer a:hover {
     border-radius: 6px;
     border: 2px solid var(--secondary-color);
 }
-
 .honSlider img {
     max-height: 150px;
     margin: 8px;
@@ -281,16 +247,13 @@ footer a:hover {
     font-size: 16px;
     margin-bottom: 0;
 }
-
 .honSlider p {
     font-size: 12px;
     margin-bottom: 10px;
 }
-
 .sliderCarousal {
     margin: 0px auto;
 }
-
 .sliderCarousal .item img {
     border-radius: 8px 8px;
     padding: 5px;
@@ -311,7 +274,6 @@ footer a:hover {
     padding: 0;
     color: var(--text-dark);
 }
-
 .sliderCarousal .owl-nav {
     position: absolute;
     top: 45%;
@@ -322,7 +284,6 @@ footer a:hover {
     pointer-events: none;
     margin-top: 0 !important;
 }
-
 .sliderCarousal .owl-nav button {
     color: var(--bg-light) !important;
     border: none;
@@ -335,17 +296,14 @@ footer a:hover {
     background: var(--primary-color) !important;
     border-radius: 50%;
 }
-
 .sliderCarousal .owl-nav button.owl-prev {
     position: absolute;
     left: 10px;
 }
-
 .sliderCarousal .owl-nav button.owl-next {
     position: absolute;
     right: 10px;
 }
-
 .owl-nav button:hover {
     background-color: var(--secondary-color) !important;
 }
@@ -354,13 +312,12 @@ footer a:hover {
 .noticeboard {
     height: 250px;
     margin: -1px auto 15px;
-    background-color: var(--bg-light);
+    background-color: #fff;
     border-radius: 0;
-    box-shadow: 0 4px 8px 0 var(--box-shadow-color2);
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure the list doesn't overflow */
     position: relative;
-    border: 0;
-    width: calc(100% - 2px);
+    border: 1px solid #ddd;
 }
 .card .card-header h4 {
     margin: 0;
@@ -377,33 +334,27 @@ footer a:hover {
     margin: 0;
     position: relative;
 }
-
 #noticeScroller li a {
     color: var(--primary-color);
     display: block;
     width: 100%;
-    padding: 8px;
-}
-.noticeboard li:hover::before {
-    color: var(--text-light) !important;
-}
-#noticeScroller li::before {
-    content: "\2022";
-    font-size: 14px;
-    padding: 10px 0 0 20px;
+    padding: 8px 8px 8px 20px;
 }
 #noticeScroller li {
     font-size: 16px;
     line-height: 1.5;
     padding: 0;
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
+    border-bottom: 1px solid #eee;
+    color: #333;
 }
 .noticeboard li:hover a {
     color: var(--text-light) !important;
 }
 .noticeboard li:hover {
     background: var(--secondary-color);
+}
+.noticeboard:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 .video-embed-container {
     padding: 2px;
@@ -423,7 +374,6 @@ footer a:hover {
     line-height: 1.6;
     color: var(--text-gray);
 }
-
 .welcomeNote h1 {
     color: var(--text-primary);
     font-size: 24px;
@@ -435,7 +385,6 @@ footer a:hover {
     font-weight: 600;
     text-decoration: underline;
 }
-
 .welcomeNote ul li {
     line-height: 1.6;
 }
@@ -443,7 +392,6 @@ footer a:hover {
     margin-left: 20px;
     padding-left: 0;
 }
-
 /* Media Query */
 @media (max-width: 768px) {
 }
