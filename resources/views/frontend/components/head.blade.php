@@ -22,4 +22,5 @@
 
     <!-- Canonical Link -->
     <link rel="canonical" href="@yield('canonical', url()->current())">
+
 </head>

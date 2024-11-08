@@ -21,12 +21,17 @@
 
     <!-- Manually reference your app's compiled CSS (output from Laravel Mix or directly) -->
     <link href="{{ asset('css/homestyle.css') }}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+
+
 </head>
 
 <body>
     @include('frontend.components.header', ['menus' => $menus])
 
-    <main class="container py-4">
+    <main>
         @yield('content')
     </main>
 
@@ -46,21 +51,6 @@
     <script src="{{ asset('js/home.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 
-    <!-- Initialize Owl Carousel -->
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: { items: 1 },
-                    600: { items: 3 },
-                    1000: { items: 5 }
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

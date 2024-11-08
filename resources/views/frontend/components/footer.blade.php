@@ -18,7 +18,7 @@
         </ul>
     </div>
     <div class="copywrite text-center p-3">
-        <p class="m-0">&copy; {{ date('Y') }} Government Polytechnic Kolhapur. All Rights Reserved.</p>
+        <p class="m-0">&copy; {{ date('Y') }} Government Polytechnic Kolhapur | All Rights Reserved.</p>
     </div>
 
 </footer>
